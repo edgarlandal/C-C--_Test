@@ -1,11 +1,16 @@
 // My first program in C++
-
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "persona.h"
+
 int main(int argc, char const *argv[])
 {
-    printf("Hola");
+    const char *name = "edgar";
 
-    return 1;
+    Persona persona((char *)name, 23);
+    printf("Name : %s\n", persona.getName());
+    printf("Age : %d\n", persona.getAge());
+
+    return 0;
 }
