@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "Date.h"
+#include "Time.h"
 
 int main(int argc, char const *argv[])
 {
@@ -12,5 +13,10 @@ int main(int argc, char const *argv[])
     Date tomorrow(20230617);
     tomorrow.viewDate();
 
+    Time now(6,51,0);
+    now.viewTime();
+
+    Time time_set(23000);
+    time_set.viewTime();
     return 0;
 }
